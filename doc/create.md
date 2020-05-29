@@ -10,6 +10,7 @@ git push -u origin master
 ```
 python -m venv venv
 . venv/bin/activate
+pip freeze > r.txt
 ```
 
 

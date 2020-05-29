@@ -108,3 +108,18 @@ def error(*args, **kwargs):
 def exception(*args, **kwargs):
     msg = _log(*args, **kwargs)
     logger.exception(msg)
+
+
+def warn(*args, **kwargs):
+    msg = _log(*args, **kwargs)
+    logger.warn(msg)
+
+
+def warning(*args, **kwargs):
+    msg = _log(*args, **kwargs)
+    logger.warning(msg)
+
+
+def critical(*args, **kwargs):
+    msg = _log(*args, **kwargs)
+    logger.critical(msg)
