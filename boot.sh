@@ -1,2 +1,3 @@
+#!/bin/sh
 . venv/bin/activate
-python main.py
+exec python main.py

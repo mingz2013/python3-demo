@@ -8,6 +8,15 @@ Module Description
 
 """
 
-import app
+import os
 
-app.run()
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+
+def main():
+    import app
+    app.run()
+
+
+if __name__ == '__main__':
+    main()
