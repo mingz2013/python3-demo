@@ -114,9 +114,23 @@ async def main8():
         print("timeout!")
 
 
+import asyncio
+import sys
+
+
+def main9():
+    loop = asyncio.get_event_loop()
+    loop.add_reader(
+        sys.stdin.fileno(), lambda: print(sys.stdin.readline()))
+    # loop.add_writer()
+    # loop.connect_read_pipe()
+    loop.run_forever()
+
+
 if __name__ == '__main__':
     # asyncio.run(main())
     # asyncio.run(main2())
     # main6()
     # asyncio.run(main7())
-    asyncio.run(main8())
+    # asyncio.run(main8())
+    main9()
